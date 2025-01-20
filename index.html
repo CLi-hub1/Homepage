@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container {
+        text-align: center; /* 可选：使整个容器内容居中 */
+    }
+    .container img, .container h1 {
+        display: inline-block; /* 让图片和文字在同一行 */
+        vertical-align: middle; /* 使图片和文字垂直居中 */
+    }
+    .container img {
+        margin-right: 10px; /* 图片和文字之间的间距 */
+    }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="test.gif" alt="A cool animation" width="50" height="50">
+      <h1>Welcome to My Personal Homepage</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#people">People</a></li>
+        <li><a href="#opportunities">Opportunities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Here you can add your personal introduction, education background, and achievements</p>
+    <div class="text-overlay">
+      <h2>Our Mission</h2>
+      <p>Uncovering new knowledge at the intersection of human, infrastructure, and the natural environment in a changing climate. Deriving such knowledge to create science-based solutions to address societal challenges, therefore helping cities achieve sustainability.</p>
+    </div>
+    <img src="photo.png" alt="My Photo">
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>Paper 1: <a href="https://arxiv.org/abs/2501.08004" target="_blank">Download</a></li>
+      <li>Paper 2: <a href="https://arxiv.org/abs/2308.03313">Download</a></li>
+      <li>More publications...</li>
+    </ul>
+  </section>
+
+  <section id="people">
+    <h2>People</h2>
+    <p>Here you can introduce your team members, collaborators, or students.</p>
+  </section>
+
+
+  <section id="opportunities">
+    <h2>Opportunities</h2>
+    <p>If you're interested in collaborations or projects, feel free to reach out!</p>
+    <a href="mailto:eutopialee@gmail.com">Contact Me</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chao Li All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
