@@ -83,4 +83,5 @@ footer {
 
 #about .text-overlay p {
   font-size: 1.2em; /* 第二段文字的字体较小 */
+  line-height: 1.6;
 }
