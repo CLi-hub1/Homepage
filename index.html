@@ -7,16 +7,25 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     .container {
-        text-align: center; /* 可选：使整个容器内容居中 */
+        text-align: center;
     }
     .container img, .container h1 {
-        display: inline-block; /* 让图片和文字在同一行 */
-        vertical-align: middle; /* 使图片和文字垂直居中 */
+        display: inline-block;
+        vertical-align: middle; 
     }
     .container img {
-        margin-right: 10px; /* 图片和文字之间的间距 */
+        margin-right: 10px;
     }
-</style>
+    .container4subtitles {
+    display: flex;
+    align-items: initial; 
+    justify-content: flex-start; 
+    text-align: right;
+    }
+    .container4subtitles img {
+        margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -28,35 +37,71 @@
       <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#people">People</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#opportunities">Opportunities</a></li>
       </ul>
     </nav>
   </header>
 
+  <section id="twofold4intro">
+    <!-- <h2>About Me</h2> -->
+    <div class="left-column">
+      <img src="photo.png" alt="My Photo" class="format1">
+      <p>Name: Chao Li</p>
+      <p>Position: PhD Candidate</p>
+      <p>Affiliation: Zhejiang University</p>
+      <div class = "container">
+        <a href="https://github.com/CLi-hub1" class="google-scholar">
+          <img src="github_icon.png" alt="github" class="format2">
+        </a>
+        <a href="https://scholar.google.com/citations?user=NAkMiRkAAAAJ&hl=zh-CN" class="google-scholar">
+          <img src="google_scholar_social media_icon.png" alt="Google Scholar" class="format2">
+        </a>
+        <!-- <a href="https://mail.google.com/mail" class="gmail">
+          <img src="email_logo_icon.png" alt="gmail" class="format2">
+        </a> -->
+      </div>
+    </div>
+    <div class="right-column">
+      <div class="container4subtitles">
+        <img src="quote_icon.png" alt="quote" width="40" height="40">
+        <h2>Quote</h2>
+      </div>
+      <p>" No cross, no crown "</p>
+      <div class="news">
+        <div class="container4subtitles">
+          <img src="news_icon.png" alt="news" width="40" height="40">
+          <h2>News</h2>
+        </div>
+        <p>Stay tuned for the latest updates!</p>
+      </div>
+    </div>
+  </section>
+
   <section id="about">
     <h2>About Me</h2>
     <p>Here you can add your personal introduction, education background, and achievements</p>
     <div class="text-overlay">
-      <h2>Our Mission</h2>
+      <h2>My Mission</h2>
       <p>Uncovering new knowledge at the intersection of human, infrastructure, and the natural environment in a changing climate. </p>
-      <p>Deriving this kind of new knowledge to create science-based solutions to address societal challenges, therefore helping cities achieve sustainability. </p>
+      <p>Deriving such new knowledge to create science-based solutions to address societal challenges, therefore helping cities achieve sustainability. </p>
     </div>
-    <img src="photo.png" alt="My Photo">
+    <img src="dragoncat.png" alt="My Photo">
   </section>
 
   <section id="publications">
     <h2>Publications</h2>
     <ul>
-      <li>Paper 1: <a href="https://arxiv.org/abs/2501.08004" target="_blank">Download</a></li>
-      <li>Paper 2: <a href="https://arxiv.org/abs/2308.03313">Download</a></li>
+      <li>Paper 1: <a href="https://arxiv.org/abs/2501.08004" target="_blank">Bridging financial gaps for infrastructure climate adaptation via integrated carbon markets</a></li>
+      <li>Paper 2: <a href="https://arxiv.org/abs/2501.08004" target="_blank">Quantifying the Impact of Large Language Models on Collective Opinion Dynamics</a></li>
+      <li>Paper 3: <a href="https://www.nature.com/articles/s42949-024-00157-w" target="_blank">Behavior-encoded models reveal differentiated access to public cooling environment by race and income</a></li>
       <li>More publications...</li>
     </ul>
   </section>
 
-  <section id="people">
-    <h2>People</h2>
-    <p>Here you can introduce your team members, collaborators, or students.</p>
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Here you can introduce your projects.</p>
   </section>
 
 
@@ -67,7 +112,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Chao Li All rights reserved.</p>
+    <p>&copy; 2025-2050 Chao Li. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

@@ -51,7 +51,9 @@ footer {
   width: 100%;
 }
 
-/* 给图片添加文字 */
+/* 其他功能 */
+
+/* 图片上加文字 */
 #about {
   position: relative;
 }
@@ -70,7 +72,6 @@ footer {
   left: 5%; /* 文字从左侧开始 */
   text-align: left; /* 改为左对齐 */
   color: white;
-  /* background-color: rgba(0, 0, 0, 0.5); 半透明黑色背景 */
   padding: 10px;
   max-width: 90%;
   z-index: 1; /* 确保文字显示在图片之上 */
@@ -85,3 +86,72 @@ footer {
   font-size: 1.2em; /* 第二段文字的字体较小 */
   line-height: 1.6;
 }
+
+
+/* #twofold4intro Styles */
+/* #twofold4intro Start */
+#twofold4intro {
+  display: flex;
+}
+
+#twofold4intro .left-column {
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+}
+
+#twofold4intro .left-column p {
+  margin: 1px 0;
+}
+
+#twofold4intro .right-column {
+  width: 70%;
+  padding: 10px;
+}
+
+#twofold4intro .right-column p {
+  margin: 5px 0px 20px 0px;
+}
+
+#twofold4intro img.format1 {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#twofold4intro img.format2 {
+  border-radius: 0;
+  width: 30px;
+  height: 30px;
+  /* margin-bottom: 10px;
+  margin-right: 10px; */
+  line-height: 0;
+}
+
+
+#twofold4intro .google-scholar {
+  margin-top: 10px;
+}
+
+#twofold4intro .news {
+  background-color: #f9f9f9;
+  /* padding: 10px; */
+  /* margin-top: 20px; */
+}
+
+@media (max-width: 768px) {
+  #twofold4intro {
+    flex-direction: column;
+  }
+
+  #twofold4intro .left-column {
+    width: 100%;
+  }
+
+  #twofold4intro .right-column {
+    width: 100%;
+  }
+}
+/* #twofold4intro End */
