@@ -1,14 +1,25 @@
+.element {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .element {
+      width: 1000px;
+      margin: 0 auto;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 header {
   background: #333;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 
 header h1 {
@@ -66,9 +77,6 @@ footer {
 #about .text-overlay {
   position: absolute;
   top: 20%;
-  /* left: 50%; */
-  /* transform: translateX(-50%); 使文字居中 */
-  /* text-align: center; */
   left: 5%; /* 文字从左侧开始 */
   text-align: left; /* 改为左对齐 */
   color: white;
@@ -78,12 +86,12 @@ footer {
 }
 
 #about .text-overlay h2 {
-  font-size: 2em; /* 第一段文字的字体较大 */
+  font-size: 1.5em; /* 第一段文字的字体较大 */
   font-weight: bold; /* 第一段文字加粗 */
 }
 
 #about .text-overlay p {
-  font-size: 1.2em; /* 第二段文字的字体较小 */
+  font-size: 1em; /* 第二段文字的字体较小 */
   line-height: 1.6;
 }
 
