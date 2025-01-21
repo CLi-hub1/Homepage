@@ -77,7 +77,8 @@ footer {
 #about .text-overlay {
   position: absolute;
   top: 20%;
-  left: 5%; /* 文字从左侧开始 */
+  left: 5%;
+  right: 5%;
   text-align: left; /* 改为左对齐 */
   color: white;
   padding: 10px;
@@ -93,6 +94,18 @@ footer {
 #about .text-overlay p {
   font-size: 1em; /* 第二段文字的字体较小 */
   line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  #about .text-overlay {
+    top: 50%; /* 将文本定位到图片上方50%的位置 */
+    transform: translateY(-50%);
+  }
+
+  #about .text-overlay h2,
+  #about .text-overlay p {
+    font-size: 3vw; /* 使用视窗宽度的百分比作为字体大小 */
+  }
 }
 
 
