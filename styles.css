@@ -98,7 +98,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   #about .text-overlay {
-    top: 90%; /* 将文本定位到图片上方50%的位置 */
+    top: 70%; /* 将文本定位到图片上方50%的位置 */
     transform: translateY(-50%);
   }
 
